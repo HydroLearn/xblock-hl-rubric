@@ -68,11 +68,11 @@ class HL_Rubric_text_XBlock(hl_text_XBlock):
 
         context = context or {}
 
-        fragment = super(HL_LearningObjs_text_XBlock, self).studio_view(context)
+        fragment = super(HL_Rubric_text_XBlock, self).studio_view(context)
 
 
         # add the custom help styling to the fragment
-        fragment.add_css(loader.load_unicode('static/css/rubric_help_styling.css'));
+        fragment.add_css(loader.load_unicode('static/css/rubric_help_styling.css'))
         
 
         return fragment
