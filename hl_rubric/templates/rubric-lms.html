@@ -1,0 +1,47 @@
+<!-- LMS view for Learning Objectives listing -->
+<style>
+    .HL_LO_xblock h2 {
+        font-weight: 600 !important;
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-size: 1.8em !important;
+        line-height: 1.8em !important;
+        color: #232323 !important;
+        border-bottom: 1px solid #ccc !important;
+        margin: 25px 0 10px !important;
+        text-transform: none !important;
+
+
+    }
+    .HL_LO_xblock h3 {
+        font-size: 1.2em !important;
+        line-height: 1.3em !important;
+        color: #7f7f7f !important;
+        font-weight: 600 !important;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        margin: 25px 0 10px !important;
+        text-transform: none !important;
+    }
+</style>
+<div class="HL_LO_xblock">
+    <h2>Learning Objectives</h2>
+
+    {% if self.learning_objs %}
+
+        <h3>At the end of this section, the following is expected:</h3>
+        <div class="objectives_listing"></div>
+    {% else %}
+
+        <p>
+            Use this Wizard to develop and embed new Learning Objectives into
+            your content. If you prefer to develop Learning Objectives without
+            this Wizard, go back and add them using the "Learning Objective Template".
+        </p>
+
+        <p>
+            To start using the Wizard, click the "Edit" button in the toolbar
+            and follow the specified steps.
+        </p>
+
+
+    {% endif %}
+</div>
