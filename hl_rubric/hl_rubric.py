@@ -1,12 +1,7 @@
 """
 
-XBlock for presenting the user with a wizard for generating learning objectives
+XBlock for presenting the user with a text template for generating rubrics
 associated with a unit.
-
-Learning objectives are a specialized statement describing what learners are
-expected 'get' out of a lesson. Linking this statement to ABET outcomes
-based on Bloom's taxonomy.
-
 
 Author : Cary Rivet
 
@@ -43,11 +38,8 @@ from web_fragments.fragment import Fragment
 
 
 
-# text implementation of learning objs xblock without wizard interface
+# hl-text template for rubric xblock
 class HL_Rubric_text_XBlock(hl_text_XBlock):
-
-    # modify path to the custom starter template for empty xblocks
-    #empty_template = 'templates/initial_learning_activity_template.html'
 
     display_name = String(
         display_name="Display Name",

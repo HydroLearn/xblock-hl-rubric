@@ -32,7 +32,7 @@ PREREQs = [
 ]
 
 BLOCKS = [
-    # the main learning obj block
+    # the rubric text xblock
     'hl_rubric_text = hl_rubric:HL_Rubric_text_XBlock',
 
 ]
