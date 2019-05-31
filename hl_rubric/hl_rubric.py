@@ -82,8 +82,8 @@ class HL_Rubric_text_XBlock(hl_text_XBlock):
     def workbench_scenarios():
         """A canned scenario for display in the workbench."""
         return [
-            ("HL Learning objs text XBlock",
-             """<hl_learning_objs_text/>
+            ("HL rubric text XBlock",
+             """<hl_rubric_text/>
              """),
 
         ]
