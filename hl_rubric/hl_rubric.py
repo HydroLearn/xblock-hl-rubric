@@ -7,7 +7,7 @@ Author : Cary Rivet
 
 """
 
-import urllib, datetime, json, urllib2
+import urllib.request, urllib.parse, urllib.error, datetime, json
 
 from hl_text import hl_text_XBlock
 from hl_utils import HLXBlockModalHelperMixin
